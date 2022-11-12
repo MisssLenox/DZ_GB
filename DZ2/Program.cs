@@ -5,14 +5,15 @@ int num_1 = Convert.ToInt32(Console.ReadLine());
 int num_2 = Convert.ToInt32(Console.ReadLine());
 int num_3 = Convert.ToInt32(Console.ReadLine());
 
-int max = num_1;
+int max ;
 
-if (num_1 > max)
-{
-    max = num_2;
-}
-if (num_3 > max)
-{
-    max = num_3;
-}
+//if (num_1 > max)
+//{
+  //  max = num_2;
+//}
+//if (num_3 > max)
+//{
+ //   max = num_3;
+//}
+max = Math.Max(Math.Max(num_1,num_2),num_3);
 Console.WriteLine("Наибольшее из введенных чисел -> " + max);
